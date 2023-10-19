@@ -14,9 +14,10 @@ bool alarmeAtivo = false;
 int horaDespertador = 23;
 int minutoDespertador = 0;
 int pinBotaoX = 12;
+const int Ledquinta = 15;
 
-const char* ssid = "Luciano"; // internet //
-const char* password = "yuji2106";  // senha da internet //
+const char* ssid = "tccesp34"; // internet //
+const char* password = "12345678";  // senha da internet //
 
 bool teste = false;
 bool config = false;
