@@ -30,6 +30,7 @@ int valores[4] = {0, 0, 0, 0};
 
 void setup() {
   
+  pinMode (Ledquinta, OUTPUT);
   pinMode(pinBotaoX, INPUT_PULLUP);
   Wire.begin();
   rtc.begin();
@@ -134,7 +135,9 @@ void loop() {
             lcd.setCursor(0, 0);
             lcd.print("ALARME!");
             enviar_req();
+            digitalWrite (Ledquinta, HIGH);
             delay(10000);
+            digitalWrite (Ledquinta, LOW);
             alarmeAtivo = true;
         }
 
